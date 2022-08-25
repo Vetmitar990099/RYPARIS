@@ -1,21 +1,28 @@
 #imgp {
     display: inline;
 }
-#mainpicture {
+#mainpicture, #popularrecipespicture {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-image: url("../images/hero-image.jpg");
-    background-size: 100% 1000px;
     width: 100%;
     height: 300px;
     margin: 0px;
+}
+#popularrecipespicture {
+    background-image: url("../images/bengal-burger.jpg");
+    background-size: 100% 300px;
+    background-position: center;
+}
+#mainpicture {
+    background-image: url("../images/hero-image.jpg");
+    background-size: 100% 1000px;
 }
 body {
     background-color: white;
     margin: 0px;
 }
-#mainpicturetext {
+#mainpicturetext, #popularrecipespicturetext {
     display: flex;
     background-color: aliceblue;
     width: 300px;
@@ -27,6 +34,7 @@ body {
 }
 #header, #logo, #navcontainer {
     display: flex;
+    
     flex-direction: row;
     align-items: center;
 }
@@ -36,20 +44,25 @@ body {
 }
 #imgp1, #imgp2, #imgp3 {
     display: flex;
+    
     margin: 20px;
     align-items: center;
     justify-content: center;
 }
 #imgp1, #imgp3 {
-    width: 300px;
+    width: 240px;
     height: 180px;
 }
 #imgp2 {
     width: 180px;
     height: 180px;
 }
-#imgpover {
+#imgpover1, #imgpover2, #imgpover3 {
     display: flex;
+    flex-wrap: wrap;
+}
+#imgpover2 {
+    margin-left: 30px;
 }
 #navcontainer {
     justify-content: flex-start;
@@ -57,9 +70,12 @@ body {
 }
 #nav {
     margin: 10px;
+    text-decoration: none;
+    color: black;
 }
 #healthyrecipesbckgr {
     display: flex;
+    
     background-color: darkgray;
     flex-direction: column;
 }
@@ -67,17 +83,19 @@ p#imgp2, p#imgp1, p#imgp3 {
     background-color: white;
     height: 40px;
 }
-#healthyrecipes, #healthyrecipesmain, #everyday, #where {
+#healthyrecipesmain, #everyday, #where, #healthyrecipes {
     margin-right: 30px;
     margin-left: 30px;
 }
 #footer {
     display: flex;
+    
     background-color: coral;
     justify-content: space-between;
 }
 #footerinfo {
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
     width: 400px;
@@ -86,4 +104,63 @@ p#imgp2, p#imgp1, p#imgp3 {
 #copyright {
     margin-left: 20px;
 }
-
+#sizer {
+    flex-grow: 1;
+}
+.bolded {
+    font-weight: bold;
+}
+#HOTWinfo {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+}
+#info, #info2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+}
+#info1, #HOTWinfoheader {
+    margin-left: 80px;
+}
+#review {
+    display: flex;
+    background-color: darkgray;
+    height: 100px;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    margin-top: 10px;
+}
+#actualreview {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#saverecipe {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    background-color: red;
+}
+.print {
+    border-radius: 15px;
+    cursor: pointer;
+}
+#saveandprint {
+    margin-top: 5px;
+}
+#stars {
+    color: red;
+}
+#ingredientanddirection {
+    display: flex;
+}
+#maindiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#direction {
+    width: 500px;
+}
