@@ -32,7 +32,7 @@ body {
     justify-content: center;
     margin-bottom: 50px;
 }
-#header, #logo, #navcontainer {
+#header, #logo, .navcontainer {
     display: flex;
     
     flex-direction: row;
@@ -42,18 +42,18 @@ body {
     background-color: coral;
     justify-content: space-between;
 }
-#imgp1, #imgp2, #imgp3 {
+.imgp1, .imgp2, .imgp3 {
     display: flex;
     
     margin: 20px;
     align-items: center;
     justify-content: center;
 }
-#imgp1, #imgp3 {
+.imgp1, .imgp3 {
     width: 240px;
     height: 180px;
 }
-#imgp2 {
+.imgp2 {
     width: 180px;
     height: 180px;
 }
@@ -64,11 +64,11 @@ body {
 #imgpover2 {
     margin-left: 30px;
 }
-#navcontainer {
+.navcontainer {
     justify-content: flex-start;
     
 }
-#nav {
+.nav {
     margin: 10px;
     text-decoration: none;
     color: black;
@@ -79,7 +79,7 @@ body {
     background-color: darkgray;
     flex-direction: column;
 }
-p#imgp2, p#imgp1, p#imgp3 {
+p.imgp2, p.imgp1, p.imgp3 {
     background-color: white;
     height: 40px;
 }
@@ -104,7 +104,7 @@ p#imgp2, p#imgp1, p#imgp3 {
 #copyright {
     margin-left: 20px;
 }
-#sizer {
+.sizer {
     flex-grow: 1;
 }
 .bolded {
@@ -124,7 +124,7 @@ p#imgp2, p#imgp1, p#imgp3 {
     margin-left: 80px;
 }
 #review {
-    display: block;
+    display: flex;
     background-color: darkgray;
     height: 100px;
     width: 60%;
@@ -135,7 +135,7 @@ p#imgp2, p#imgp1, p#imgp3 {
 #actualreview {
     margin-left: 40px;
     margin-right: 40px;
-    
+    font-size: 1vw;
 }
 #saverecipe {
     padding: 5px;
