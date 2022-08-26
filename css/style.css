@@ -124,7 +124,7 @@ p#imgp2, p#imgp1, p#imgp3 {
     margin-left: 80px;
 }
 #review {
-    display: flex;
+    display: block;
     background-color: darkgray;
     height: 100px;
     width: 60%;
@@ -135,6 +135,7 @@ p#imgp2, p#imgp1, p#imgp3 {
 #actualreview {
     margin-left: 40px;
     margin-right: 40px;
+    
 }
 #saverecipe {
     padding: 5px;
